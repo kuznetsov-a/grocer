@@ -1,0 +1,209 @@
+body {
+  background-color: #a2a2a2;
+}
+
+h1 {
+  color: navy;
+  margin-left: 2vw;
+  text-align: center;
+}
+
+.grocery-main{
+  min-height: 100%;
+    display: grid;
+    grid-template-rows:minmax(1vh, 1fr);
+    grid-template-columns: none;
+    grid-row-gap:10px;
+
+}
+.grocery-item {
+  
+  font-size: 4vh;
+  color: #0f0fa7;
+  left:0%;
+  width: 100%;
+  border: 1px solid white;
+  text-align: center;
+  position:inherit;
+  user-select:none;
+}
+
+.grocery-button-add-item {
+  font-weight: lighter;
+  font-size: 3vh;
+  color: #0f0fa7;
+
+  text-align: center;
+
+}
+
+.grocery-input-add-item {
+  
+  font-size: 3vh;
+  color: #0f0fa7;
+  width: 100%;
+ 
+  border: 1px solid white;
+  display: flex;
+  flex-wrap: wrap;
+  /* for horizontal aligning of child divs */
+  justify-content: center;
+  /* for vertical aligning */
+  align-items: center;
+}
+
+.grocery-input-add-recipe {
+  
+  font-size: 3vh;
+  color: #0f0fa7;
+  width: 100%;
+ 
+  border: 1px solid white;
+  display: flex;
+  flex-wrap: wrap;
+  /* for horizontal aligning of child divs */
+  justify-content: center;
+  /* for vertical aligning */
+  align-items: center;
+}
+
+.recipe-item {
+  
+  font-size: 4vh;
+  color: #0f0fa7;
+  left:0%;
+  width: 100%;
+  border: 1px solid white;
+  text-align: center;
+  position:inherit;
+  user-select:none;
+}
+
+.recipe-ingredient {
+  
+  font-size: 3vh;
+  color: #4b2903;
+  left:0%;
+  width: 100%;
+  border: none;
+  text-align: center;
+  position:inherit;
+  user-select:none;
+}
+
+.plan-meal {
+  
+  font-size: 3vh;
+  color: #4b2903;
+  left:0%;
+  width: 100%;
+  border: none;
+  text-align: center;
+  position:inherit;
+  user-select:none;
+}
+
+.grocery-amount {
+  font-weight: lighter;
+  color: #691206d0;
+}
+
+.grocery-button-amount {
+  font-weight: lighter;
+  color: #070100;
+}
+
+.grocery-active {
+  font-weight: bolder;
+  color: #ff0000;
+}
+
+.recipe-active {
+  font-weight: bolder;
+  
+}
+
+.nav-categories { 
+  width: 100%;
+  font-size: 3vh;
+ 
+  bottom: 0;
+  position: fixed;
+  display: table;
+  flex-wrap: wrap;
+  /* for horizontal aligning of child divs */
+  justify-content: center;
+  /* for vertical aligning */
+  align-items: center;
+background-color: darkolivegreen;
+color:whitesmoke;
+}
+
+.nav-modes { 
+  width: 100%;
+  font-size: 3vh;
+  top: 0%;
+  position: fixed;
+  display: table;
+  flex-wrap: wrap;
+  /* for horizontal aligning of child divs */
+  justify-content: center;
+  /* for vertical aligning */
+  align-items: center;
+  color: white;
+  background-color: darkslategray;
+}
+
+.shopping-notavail {
+  font-weight: lighter;
+  font-size: 4vh;
+  color: rgb(180, 146, 118);
+  left:0%;
+  width: 100%;
+  border:none;
+  text-align: center;
+  position: relative;
+  user-select:none;
+
+}
+.upper-icons {
+  width: 100%;
+  font-size: 5vh;
+  color: #691206d0;
+  text-align: center;
+
+}
+
+.shopping-category {
+  width: 100%;
+  font-size: 3vh;
+  font-weight: bolder;
+  color: black;
+  text-align: center;
+
+}
+
+.logger{width: 100%;
+color:black;
+background-color: white;
+font-size: 3vh;
+flex-wrap: wrap;
+overflow-wrap: anywhere;}
+
+.help{
+  font-size: 2vh;
+  font-weight: lighter;
+  color: #691206d0;
+}
+
+.settings-item {
+  
+  font-size: 4vh;
+  color: #0f0fa7;
+  left:0%;
+  width: 100%;
+  border: 1px solid white;
+  text-align: center;
+  position:inherit;
+  user-select:none;
+}

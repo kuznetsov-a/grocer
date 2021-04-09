@@ -1,0 +1,70 @@
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<head>
+    <title> Grocer - the smart shopping list </title>
+    <link href="./grocer.css" rel="stylesheet">
+</head>
+
+<body>
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <div id='main' class='grocery-main'>
+        <nav-modes></nav-modes>
+        <br>
+        <div v-if="currentMode=='Shelf'">
+            
+            <grocery-item v-for='item in itemsSorted' v-bind:item='item' ></grocery-item>
+            <add-item-input></add-item-input>
+            <nav-categories></nav-categories>
+        </div>
+
+        <div v-if="currentMode=='Shop'">
+            
+            <shop-reset></shop-reset>
+            <shopping-category v-for='cat in categories' v-bind:category='cat' ></shopping-category>
+        </div>
+
+        <div v-if="currentMode=='Recipes'">
+            
+            <recipe-item v-for='rec in recipes' v-bind:recipe='rec' ></recipe-item>
+            <add-recipe-input></add-recipe-input>
+            
+        </div>
+
+        <div v-if="currentMode=='Meal Plan'">
+            
+            <meal-icons></meal-icons>
+            <meal-day v-for='(day, index) in daysOfWeek' v-bind:day='day' v-bind:planid='index'></meal-day>
+        </div>
+
+        <div v-if="currentMode=='⚙'">
+            <firebase-authenticator></firebase-authenticator>
+            
+        </div>
+        
+        <div v-show='grocerDebug' id='logger' class='logger'></div>
+        
+
+    </div>
+    <br>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+    
+
+    <script src="./grocer.js"></script>
+
+
+
+</body>
+
+</html>
